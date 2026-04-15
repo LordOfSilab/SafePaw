@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Background circle (maskable safe zone) -->
+  <circle cx="60" cy="60" r="60" fill="#FFFBEB"/>
+  <!-- Paw print in amber -->
+  <!-- Palm pad -->
+  <ellipse cx="60" cy="76" rx="22" ry="19" fill="#F59E0B"/>
+  <!-- Toe pads -->
+  <ellipse cx="33" cy="50" rx="10" ry="12" fill="#F59E0B"/>
+  <ellipse cx="50" cy="37" rx="10" ry="12" fill="#F59E0B"/>
+  <ellipse cx="70" cy="37" rx="10" ry="12" fill="#F59E0B"/>
+  <ellipse cx="87" cy="50" rx="10" ry="12" fill="#F59E0B"/>
+</svg>
