@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/gimi.jpg" alt="Gimi 🐾" width="200" style="border-radius: 50%;">
+  <img src="./assets/gimi.jpeg" alt="Gimi 🐾" width="200" style="border-radius: 50%;">
 
   <h3>🐾 In loving memory of Gimi — the goodest boy.</h3>
   <p><em>This app exists because of you.</em></p>
@@ -55,10 +55,14 @@ It's free. It always will be. For Gimi, and for every dog like him.
 
 <div align="center">
 
-| Toxic Foods | Food Detail | Dose Calculator | Emergency Contacts |
-|:-----------:|:-----------:|:---------------:|:------------------:|
-| ![Toxic Foods list](./assets/screenshot-foods.png) | ![Food detail](./assets/screenshot-detail.png) | ![Dose Calculator](./assets/screenshot-calculator.png) | ![Emergency Contacts](./assets/screenshot-emergency.png) |
-| Browse and search 25+ foods with danger ratings | Expand any item for symptoms and first-aid steps | Enter dog weight and amount eaten for a risk estimate | One-tap calling for poison control lines worldwide |
+> 📸 Screenshots coming soon — deploy the app and add your own!
+
+| Page | What you'll see |
+|------|----------------|
+| 🍫 Toxic Foods | Searchable list with danger badges — tap any item to expand symptoms and first-aid steps |
+| 🌿 Toxic Plants | Same pattern, with scientific names and toxic parts listed |
+| ⚖️ Dose Calculator | Enter dog weight + amount eaten → instant color-coded risk assessment |
+| 🚨 Emergency | Auto-detected country, tap-to-call buttons for every poison control line |
 
 </div>
 
@@ -208,5 +212,5 @@ MIT — free to use, fork, and deploy.
 <div align="center">
   <p><em>SafePaw was created in memory of Gimi 🐾</em></p>
   <p><em>May this help every dog and every owner who needs it.</em></p>
-  <img src="./assets/gimi.jpg" alt="Gimi" width="80" style="border-radius: 50%; opacity: 0.7;">
+  <img src="./assets/gimi.jpeg" alt="Gimi" width="80" style="border-radius: 50%; opacity: 0.7;">
 </div>
