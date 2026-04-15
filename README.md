@@ -18,7 +18,7 @@
 ![React](https://img.shields.io/badge/made%20with-React-61DAFB)
 ![Vercel](https://img.shields.io/badge/deploy-Vercel-black)
 
-[🌐 Open Web App](#) &nbsp;&nbsp; [⭐ Star this repo](#)
+[🌐 Open Web App](https://safe-paw-six.vercel.app/) &nbsp;&nbsp; [⭐ Star this repo](https://github.com/LordOfSilab/SafePaw)
 
 </div>
 
@@ -52,7 +52,7 @@ It's free. It always will be. For Gimi, and for every dog like him.
 ## Getting Started
 
 ```bash
-git clone https://github.com/yourusername/safepaw
+git clone https://github.com/LordOfSilab/SafePaw
 cd safepaw
 npm install
 npm run dev
@@ -84,7 +84,7 @@ SafePaw is a static Vite app — zero backend, zero database. Deploying takes ab
 2. Go to [vercel.com](https://vercel.com) and click **"Add New Project"**
 3. Import your GitHub repository — Vercel detects Vite automatically, no configuration needed
 4. Click **Deploy**
-5. Your app is live at `yourapp.vercel.app` — share it with the world
+5. Your app is live — SafePaw is deployed at [safe-paw-six.vercel.app](https://safe-paw-six.vercel.app/)
 6. Every future `git push` to `main` auto-deploys
 
 > The PWA service worker and Web Manifest work correctly on Vercel out of the box. Users can install the app directly from the deployed URL on both Android and iOS.
