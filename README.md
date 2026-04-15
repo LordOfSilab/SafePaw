@@ -20,8 +20,6 @@
 
 [🌐 Open Web App](#) &nbsp;&nbsp; [⭐ Star this repo](#)
 
-<!-- add screenshot here -->
-
 </div>
 
 ---
@@ -48,23 +46,6 @@ It's free. It always will be. For Gimi, and for every dog like him.
 - 📱 **Installable on iPhone and Android** — no app store needed, just "Add to Home Screen"
 - 🌙 **Dark mode / light mode** — follows your system preference, or toggle manually
 - 🔍 **Instant search and danger-level filters** on every list
-
----
-
-## Screenshots
-
-<div align="center">
-
-> 📸 Screenshots coming soon — deploy the app and add your own!
-
-| Page | What you'll see |
-|------|----------------|
-| 🍫 Toxic Foods | Searchable list with danger badges — tap any item to expand symptoms and first-aid steps |
-| 🌿 Toxic Plants | Same pattern, with scientific names and toxic parts listed |
-| ⚖️ Dose Calculator | Enter dog weight + amount eaten → instant color-coded risk assessment |
-| 🚨 Emergency | Auto-detected country, tap-to-call buttons for every poison control line |
-
-</div>
 
 ---
 
