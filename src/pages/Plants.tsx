@@ -1,12 +1,14 @@
 import { t } from '@/i18n/en'
-import { toxicPlants } from '@/data/plants'
+import { usePlantsData, formatTimeAgo } from '@/hooks/useSheetData'
 import { useSearch } from '@/hooks/useSearch'
 import { SearchBar } from '@/components/SearchBar'
 import { DangerFilter } from '@/components/DangerFilter'
 import { ItemCard } from '@/components/ItemCard'
+import { SHEET_PUBLIC_URL } from '@/config'
 
 export function PlantsPage() {
-  const { query, setQuery, filterLevel, setFilterLevel, results } = useSearch(toxicPlants)
+  const { plants, lastUpdated } = usePlantsData()
+  const { query, setQuery, filterLevel, setFilterLevel, results } = useSearch(plants)
 
   return (
     <div className="mx-auto max-w-lg px-4 py-4">
@@ -16,10 +18,17 @@ export function PlantsPage() {
         <DangerFilter value={filterLevel} onChange={setFilterLevel} />
       </div>
 
-      {/* Count */}
-      <p className="mb-3 text-xs text-amber-500 dark:text-amber-400">
-        {t.plants.count(results.length)}
-      </p>
+      {/* Count + last updated */}
+      <div className="mb-3 flex items-center justify-between">
+        <p className="text-xs text-amber-500 dark:text-amber-400">
+          {t.plants.count(results.length)}
+        </p>
+        {lastUpdated && (
+          <p className="text-[10px] text-amber-300 dark:text-amber-600">
+            Updated {formatTimeAgo(lastUpdated)}
+          </p>
+        )}
+      </div>
 
       {/* List */}
       {results.length === 0 ? (
@@ -46,6 +55,18 @@ export function PlantsPage() {
           ))}
         </ul>
       )}
+
+      {/* Contribute FAB */}
+      <a
+        href={SHEET_PUBLIC_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Add a food or plant to help other dogs 🐾"
+        aria-label="Contribute — add a plant to help other dogs"
+        className="fixed bottom-24 right-4 z-30 flex h-10 w-10 items-center justify-center rounded-full border border-amber-200 bg-paw-cream/95 text-amber-400 shadow-md backdrop-blur-sm transition-all hover:border-amber-300 hover:bg-amber-50 hover:text-amber-600 hover:shadow-lg dark:border-paw-dark-border dark:bg-paw-dark-card/95 dark:text-amber-500 dark:hover:border-amber-600 dark:hover:text-amber-300"
+      >
+        <span className="text-base leading-none">✏️</span>
+      </a>
     </div>
   )
 }

@@ -159,17 +159,44 @@ The in-app Emergency page auto-detects your country from your browser locale and
 
 ---
 
-## Contributing
+## 🐾 Contributing Data
 
-SafePaw is an open project and contributions are warmly welcome — whether that's a new food entry, a translation, a bug fix, or a better explanation of a symptom. If you're a vet or a veterinary student, your expertise would mean the world.
+Anyone can add a new toxic food or plant — no coding required.
+
+**Option 1 — From the app:**
+Tap the ✏️ button on the Foods or Plants page.
+It opens the Google Sheet directly.
+
+**Option 2 — Direct link:**
+[Open the Google Sheet](https://docs.google.com/spreadsheets/d/1LgnGkPtau4QsMGtmbWFrygWxgE5AfWV3GHLOjhBu4U0/edit)
+
+### How to add a food
+
+Fill in a new row in the `foods` sheet with these columns:
+
+| name | emoji | danger_level | symptoms | what_to_do | more_info |
+|------|-------|--------------|----------|------------|-----------|
+
+- `danger_level` must be one of: `low`, `medium`, `high`, `deadly`
+- `symptoms`: pipe-separated values e.g. `Vomiting|Diarrhea|Lethargy`
+
+### How to add a plant
+
+Fill in a new row in the `plants` sheet with these columns:
+
+| name | scientific_name | emoji | danger_level | symptoms | what_to_do |
+|------|-----------------|-------|--------------|----------|------------|
+
+Changes appear in the app within minutes for all connected users.
+Offline users will see the update on their next connection.
+
+---
+
+## Contributing Code
+
+SafePaw is an open project and contributions are warmly welcome — whether that's a translation, a bug fix, or a better explanation of a symptom. If you're a vet or a veterinary student, your expertise would mean the world.
 
 Everything you add might be the thing that saves someone's dog. That's not a small thing.
-
-**Adding a new toxic food:**
-Edit [`src/data/foods.ts`](./src/data/foods.ts) and follow the existing entry structure. The Zod schema in [`src/schemas/index.ts`](./src/schemas/index.ts) will catch any missing or mistyped fields at build time.
-
-**Adding a new toxic plant:**
-Edit [`src/data/plants.ts`](./src/data/plants.ts) — same pattern. Include `scientificName` and `toxicParts` where known.
 
 **Adding a new language:**
 Duplicate [`src/i18n/en.ts`](./src/i18n/en.ts), translate the strings, and open a PR. All user-visible text lives in that one file by design.
